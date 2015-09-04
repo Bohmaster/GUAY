@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" ng-app="uai-news">
+<head>
+  <meta charset="UTF-8">
+  <title> {{ greet }} </title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- styles -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <!-- endstyles -->
+
+  <!-- scripts -->
+  <script src="vendor/jquery/dist/jquery.js"></script>
+
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="vendor/angular-resource/angular-resource.js"></script>
+  <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+  <!-- endscripts -->
+
+</head>
+<body ng-controller="MainController">
+
+<navbar></navbar>
+
+<section id="destacados">
+  <div class="container">
+    <div id="volanta" class="bold">
+      Entrevista a traiko milenko (fundador y cantante de meta guacha)
+    </div>
+    <div id="titulo">
+      ”Pasamos a ser un
+
+      mito”
+    </div>
+
+    <div id="imagen">
+      <center>
+        <img src="images/cuatro/traiko.jpeg" alt=""/>
+      </center>
+    </div>
+
+    <div id="cuerpo">
+      De sangre gitana, nacido en Chile,  y con una profunda devoción por la Vírgen. Ese es Taiko Milenko, el fundador de Meta Guacha. Charlamos con él sobre la historia de un grupo legendario, autor de clásicos como “Alma Blanca”.</br></br>
+
+      <b>¿Cómo surgió Meta Guacha?</b></br>
+      -La banda arrancó en el 2000 cuando ya había estallado la cumbia villera. Nosotros queríamos mandar otro punto de vista en las letras: la vida de la gente humilde de los barrios bajos y las villas. Los que sufren por amor perdido, por su hija, porque se levantan a las cuatro de la mañana para ir a laburar y también a la fe, que es lo último que se pierde. Y el primer tema que pegó fue Alma blanca, que habla de la peregrinación a la Virgen de Lujan. Siempre tratamos de contar historias con melodías haciendo mezclas con todas las cosas que aparecen en el barrio.</br></br>
+
+      <b>-¿Cómo era el contexto cuando empezó la cumbia villera y cómo es ahora?</b></br>
+      -En ese momento el país era un quilombo, en lo económico y en lo social. Y la gente con bronca tal vez se identificaba con nuestras letras para salir a protestar. Hoy el país está mucho más estable, es otra la energía. Nosotros tocamos en lugares en los que nunca antes imaginamos que  llegaríamos a tocar. Lo nuestro lo toman como una experiencia cultural, nosotros hicimos trascender las fronteras sociales de la cumbia y hoy la cumbia villera pasó a ser como un mito.</br></br>
+
+      <b>-¿Te acordás como fue la reacción de los medios cuando surgió la cumbia villera?</b></br>
+      -Sí, pero mirá: hablaran bien o hablaran mal de la cumbia villera, lo importante es que estaban hablando. Antes los medios hablaban mal de nosotros y le dieron tanta manija que terminaron agrandándolo más de lo que era.  Por eso cuando prohibieron la cumbia villera la terminaron potenciando porque la gente entendió cuál era nuestro mensaje: lo que pasaba en los barrios.</br></br>
+    </div>
+
+  </div>
+</section>
+
+<footer></footer>
+
+<!-- app scripts -->
+<script src="js/app.js"></script>
+
+<script src="js/modules/core/app.core.js"></script>
+<script src="js/modules/core/services/lb-services.js"></script>
+<script src="js/modules/core/controllers/MainController.js"></script>
+<script src="js/modules/core/config/cfg.js"></script>
+<script src="js/modules/core/config/routes.js"></script>
+<script src="js/modules/core/directives/navbar.js"></script>
+
+<script src="js/modules/news/app.news.js"></script>
+<script src="js/modules/news/controllers/NoticiasController.js"></script>
+<script src="js/modules/news/directives/newsblock.js"></script>
+
+<!-- endappscripts -->
+
+
+</body>
+</html>
