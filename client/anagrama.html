@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" ng-app="uai-news">
+<head>
+  <meta charset="UTF-8">
+  <title> {{ greet }} </title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- styles -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <!-- endstyles -->
+
+  <!-- scripts -->
+  <script src="vendor/jquery/dist/jquery.js"></script>
+
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="vendor/angular-resource/angular-resource.js"></script>
+  <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+  <!-- endscripts -->
+
+</head>
+<body ng-controller="MainController">
+
+<navbar></navbar>
+
+<section id="destacados">
+  <div class="container">
+    <div id="volanta" class="bold">
+      Federico Frau Barros
+    </div>
+    <div id="titulo">
+      Anagrama
+    </div>
+    <div id="imagen">
+
+    </div>
+    <div id="descripcion">
+      A unas cuadras de la cancha de Estudiantes de Buenos Aires, cerca de la estación Caseros del ferrocarril San Martín, había una pintada que decía: “Limitar es anagrama de militar”. La había hecho el Centro de Artistas de Tres de Febrero para convocar a una marcha por el día de la memoria.
+      La leí desde el tren y mientras el viaje seguía, mi mente se detuvo un rato. Empecé a pensar en el poder de las palabras y en su increíble capacidad de mutar dependiendo del contexto    </div>
+    <div id="cuerpo">
+      Así como sucede con los humanos, con las palabras no podemos dejar de tener en cuenta su origen para poder entenderlas. Limitar viene del latín limes y significa frontera o borde. Militar, también proviene del latín, militaruis, que deriva de miles, término que se utilizaba en el Imperio Romano para llamar a los que luchaban en un combate, a quienes más tarde se los empezó a llamar soldados. Miles quiere decir multiplicidad, unión. </br>
+      En el caso de la pintada de Caseros, el sustantivo militar fue usado para referirse a las Fuerzas Armadas de la oligarquía, que desaparecieron a más de 30 mil personas en la dictadura más sangrienta que sufrió nuestro país. Fue justamente esto lo que llevó a que el término militar se tiñera de tragedia y horror. Pero desde hace unos años para acá, la misma palabra, usada como verbo, es también sinónimo de lucha y de la búsqueda por conquistar un espacio perdido o faltante. Hay también un sustantivo que deriva de militar, que resume esta puja y que ha resurgido con mucha fuerza en los últimos años: militancia.</br>
+      En su libro “Argentinismos”, Martín Caparrós definió a la militancia como la actividad intensa que busca producir efectos sociales significativos y aventuró la siguiente teoría sobre el momento que estamos viviendo: “Durante años, un militante fue lo contrario de un político, la novedad es el intento de fundirlos”. Se puede interpretar que Caparrós introduce esta fusión como algo negativo, como una suerte de traición de la militancia al mezclarse con la política. Más allá de las interpretaciones, lo que dice quien supo investigar la historia de la militancia revolucionaria argentina, junto con Eduardo Anguita, es cierto: la fusión existe y es una clara muestra del presente.
+      Es también una expresión de los grandes cambios en la política de nuestro país en los últimos años y un reflejo de que ésta dejó de ser un patrimonio exclusivo de las clases dominantes. La política está rompiendo sus viejos límites e intenta bailar al ritmo del pueblo. En estos tiempos la militancia tiene una fuerza que trasciende a los gobernantes y para poder entenderla no podemos olvidar su origen, la militancia es hija de militar que es hijo de miles y por lo tanto es heredera de la multiplicidad y de la unión.
+    </div>
+  </div>
+</section>
+
+<footer></footer>
+
+<!-- app scripts -->
+<script src="js/app.js"></script>
+
+<script src="js/modules/core/app.core.js"></script>
+<script src="js/modules/core/services/lb-services.js"></script>
+<script src="js/modules/core/controllers/MainController.js"></script>
+<script src="js/modules/core/config/cfg.js"></script>
+<script src="js/modules/core/config/routes.js"></script>
+<script src="js/modules/core/directives/navbar.js"></script>
+
+<script src="js/modules/news/app.news.js"></script>
+<script src="js/modules/news/controllers/NoticiasController.js"></script>
+<script src="js/modules/news/directives/newsblock.js"></script>
+
+<!-- endappscripts -->
+
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" ng-app="uai-news">
+<head>
+  <meta charset="UTF-8">
+  <title> {{ greet }} </title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- styles -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <!-- endstyles -->
+
+  <!-- scripts -->
+  <script src="vendor/jquery/dist/jquery.js"></script>
+
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="vendor/angular-resource/angular-resource.js"></script>
+  <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+  <!-- endscripts -->
+
+</head>
+<body ng-controller="MainController">
+
+<navbar></navbar>
+
+<section id="destacados">
+  <div class="container">
+    <h1 style="font-family: 'Chinese', Fallback, sans-serif;  font-size: 50px;">Almafuertes</h1>
+    <div class="row">
+      <a href="almafuerte.html">
+        <div class="col-md-3 normal">
+          <div class="title-cat">SE JUEGA LA HISTORIA, MI AMIGO</div>
+          <div class="description-cat">
+            -Agarrensén, pibes, porque los tiempos que se vienen van a determinar un camino nuevo para la historia... ¡Despiertensén!- nos decía un viejo acodado a la barra de un bar.
+          </div>
+        </div>
+      </a>
+      <a href="viajes.html">
+        <div class="col-md-3 normal">
+          <div class="title-cat">El viaje de las mujeres privadas de su libertad</div>
+          <div class="description-cat">
+            Julia Elena vive en Mar del Plata, es docente y trabaja en escuelas secundarias para adultos, entre ellas en la escuela de la cárcel de mujeres de Batán. Tras leer y usar en clase el primer número de Guay, nos hizo llegar este texto, escrito por Daniela, una de sus alumnas.
+          </div>
+        </div>
+      </a>
+      <a href="unico.html">
+        <div class="col-md-3 normal">
+          <div class="title-cat">El único que nos nombró</div>
+          <div class="description-cat">
+            Georgina repasa la historia de AMMAR, y recuerda con cariño al único que las tuvo en cuenta.
+          </div>
+        </div>
+      </a>
+      <a href="anagrama.html">
+        <div class="col-md-3 normal">
+          <div class="title-cat">Anagrama</div>
+          <div class="description-cat">
+            A unas cuadras de la cancha de Estudiantes de Buenos Aires, cerca de la estación Caseros del ferrocarril San Martín, había una pintada que decía: “Limitar es anagrama de militar”. La había hecho el Centro de Artistas de Tres de Febrero para convocar a una marcha por el día de la memoria.
+            La leí desde el tren...
+          </div>
+        </div>
+      </a>
+      <a href="bicente.html">
+        <div class="col-md-3 normal">
+          <div class="title-cat">EL BICENTENARIO</div>
+          <div class="description-cat">
+            La noche del sábado 22 de mayo de 2010 habíamos terminado de ensayar unos temas con la banda en la que yo cantaba y nos fuimos para el obelisco. Sabíamos que esa noche la fiesta estaba ahí. La celebración por el bicentenario había empezado el día anterior y seguía...
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer></footer>
+
+
+
+<!-- app scripts -->
+<script src="js/app.js"></script>
+
+<script src="js/modules/core/app.core.js"></script>
+<script src="js/modules/core/services/lb-services.js"></script>
+<script src="js/modules/core/controllers/MainController.js"></script>
+<script src="js/modules/core/config/cfg.js"></script>
+<script src="js/modules/core/config/routes.js"></script>
+<script src="js/modules/core/directives/navbar.js"></script>
+
+<script src="js/modules/news/app.news.js"></script>
+<script src="js/modules/news/controllers/NoticiasController.js"></script>
+<script src="js/modules/news/directives/newsblock.js"></script>
+
+<!-- endappscripts -->
+
+
+</body>
+</html>

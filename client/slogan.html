@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" ng-app="uai-news">
+<head>
+  <meta charset="UTF-8">
+  <title> {{ greet }} </title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- styles -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <!-- endstyles -->
+
+  <!-- scripts -->
+  <script src="vendor/jquery/dist/jquery.js"></script>
+
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="vendor/angular-resource/angular-resource.js"></script>
+  <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+  <!-- endscripts -->
+
+</head>
+<body ng-controller="MainController">
+
+<navbar></navbar>
+
+<section id="destacados">
+  <div class="container">
+    <div id="volanta" class="bold">
+      Opinión, por Carolina Rosales Zeiger (Notas.org)
+    </div>
+    <div id="titulo">
+      Sostener el slogan
+    </div>
+    <div id="imagen">
+      <img src="images/noticias/slogan/violacion-Rene-Magritte.png" width="100%" alt=""/>
+    </div>
+    <div id="descripcion">
+      “Que no quede en el slogan,” empezó a repetirse pocos días antes de la movilización que ya se prometía escandalosamente multitudinaria</div>
+    <div id="cuerpo">
+      Que no sea cliché, empezaron a decir una y otra vez  periodistas en radio y televisión, mientras aceleraban esa conversión de consigna a lugar común, a frase bonita para cerrar cualquier copete informativo de -a esa altura, ya- cualquier cosa. Pero, ¿qué es lo que daba miedo del slogan? ¿Asustaba acaso el cliché por lo inútil o porque, como aquello que se tatúa en el inconsciente colectivo de una sociedad por motus del propio motor histórico -e histérico- de la opinión pública (no sin la delicada conducción de los grandes formadores) suele grabarse, cual refrán, huella psíquica, signo inolvidable, para siempre en la memoria asociativa de un pueblo? Si siempre habíamos pedido la masificación: ¿por qué nos atemorizaba tanto la primera gran demostración de que eso empezaba a suceder? </br>
+      El 3 de junio pasado, 80 ciudades de Argentina y otras de Chile y Uruguay salieron a la calle al grito de Ni una menos. La consigna, nacida de un colectivo de comunicadoras, intelectuales y artistas, había logrado fusionar una serie de demandas con la necesidad de corrección política que toda consigna precisa para hacerse masiva sin demasiada polémica alrededor. Pero entonces, sin detalle, identificación del origen del mal o catalogación del demonio contra el que luchar: ¿cuál era el fin de semejante manifestación colectiva? La lucha contra el patriarcado no siempre es la misma que la de un día en un barrio cuando una mujer intenta zafarse de la trompada de su marido. O la del piso en barrio norte que atestigua cómo un hombre obliga a su esposa a tener sexo mientras los niños duermen en la habitación de al lado. O la de la adolescente que llora porque su novio le revisa el celular y le recrimina hablar con chicos. Es decir: es la misma, pero no. Porque la lucha contra el patriarcado -fantasma abstracto, desconocido, convertido en ente teórico sólo acuñable por solteronas y tortonas locas- empieza como una lucha por el sentido, y antes del sentido es necesario reconocerse parte, actante, sujeto activo. Es ahí donde el 3 de junio tuvo uno de sus climax: en la posibilidad de reconocernos parte. De encontrarnos y entonces sabernos ahí: vivas en la dialéctica de una época que no perdona tibiezas, miradas al costado. De una época que todo lo cobra. Sobre todo el silencio. </br>
+      Los espacios públicos que fueron ocupados por millones de personas a lo largo del país (con una mayoría femenina notable) hicieron de amalgama para ese encuentro de las que nunca se encuentran. De las que, por fuera del diminuto séquito militante de las “cuestiones de género”, ya acostumbrado a las marchas con tetas al aire y cantitos sobre iglesias y sexo libre, se entendieron por primera vez parte de algo. Y se reconocieron. Y por eso, sólo por eso (nadie podrá entender esta sensación a menos que la haya sentido), se emocionaron. </br>
+      Entenderse y reconocerse, como descubrimiento, como anagnórisis espectacular, no tiene vuelta atrás. Aún cuando se presenta tremendamente doloroso. </br>
+      El 3 de junio el movimiento de mujeres ganó la agenda: instaló el tema y lo llevó a los grandes medios con un slogan propio. El motor histórico e histérico de nuestra sociedad convirtió el mensaje en un cliché no conducido por los mismos de siempre, sino por las mismas de nunca. Y sí: puede que cayera por la tangente esa misma noche frente a un plato de fideos frío y la mirada amenazadora de un macho en una mesa de hogar. Puede que fuese satirizado, tergiversado, utilizado. Pero algo nos enseñaron tanto las revoluciones como el más salvaje capitalismo: un slogan no se olvida.  </br>
+      No nos olvidemos de este slogan. Sostengámoslo.
+    </div>
+  </div>
+</section>
+
+
+<footer></footer>
+<!-- app scripts -->
+<script src="js/app.js"></script>
+
+<script src="js/modules/core/app.core.js"></script>
+<script src="js/modules/core/services/lb-services.js"></script>
+<script src="js/modules/core/controllers/MainController.js"></script>
+<script src="js/modules/core/config/cfg.js"></script>
+<script src="js/modules/core/config/routes.js"></script>
+<script src="js/modules/core/directives/navbar.js"></script>
+
+<script src="js/modules/news/app.news.js"></script>
+<script src="js/modules/news/controllers/NoticiasController.js"></script>
+<script src="js/modules/news/directives/newsblock.js"></script>
+
+<!-- endappscripts -->
+
+
+</body>
+</html>

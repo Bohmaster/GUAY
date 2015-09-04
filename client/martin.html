@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" ng-app="uai-news">
+<head>
+  <meta charset="UTF-8">
+  <title> {{ greet }} </title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- styles -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <!-- endstyles -->
+
+  <!-- scripts -->
+  <script src="vendor/jquery/dist/jquery.js"></script>
+
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="vendor/angular-resource/angular-resource.js"></script>
+  <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+  <!-- endscripts -->
+
+</head>
+<body ng-controller="MainController">
+
+<navbar></navbar>
+
+<section id="destacados">
+  <div class="container">
+    <div id="volanta" class="bold">
+      Martín Yeza
+    </div>
+    <div id="titulo">
+      “No pienso sobre el rol de la juventud.”
+    </div>
+    <div id="imagen">
+      <img src="images/noticias/3/martin.jpg" width="100%" alt=""/>
+    </div>
+    <div id="descripcion">
+      Martín tiene 29 años. Es de Pinamar, y precandidato a intendente de esa ciudad por el PRO</div>
+    <div id="cuerpo">
+      <b>--¿Cómo te iniciaste en la política?</b></br>
+      -A los 15 años, en medio de la crisis de 2001, empecé a participar en el centro de estudiantes de mi escuela. Me inicié políticamente en el peronismo, dentro de lo que fue el Peronismo Federal en 2008 cuando nació. En 2010 me corrí del Peronismo Federal y empecé a trabajar junto a Mauricio Macri y María Eugenia Vidal.</br></br>
+
+      <b>-¿Cuál es para vos el rol de la juventud?</b></br>
+      -No pienso particularmente sobre el rol de la juventud sino sobre el de la ciudadanía. La participación política es un derecho y soy de la idea de que uno lo tiene que ejercer y llevarlo a la práctica. </br></br>
+
+      <b>-¿Cuáles son las problemáticas que enfrentan los jóvenes de PInamar?</b></br>
+      -Los problemas que tienen los jóvenes en Pinamar, al igual que los adultos que viven acá, son exactamente los mismo que los que tienen los de la provincia y los del país. </br></br>
+
+      <b>-¿Qué políticas rescatas de las que se han hecho a lo largo de los últimos años desde el Estado?</b></br>
+      -A nivel provincial la gestión fue muy mala, se desmantelaron los centros de prevención de adicciones a medida que avanzó el narcotráfico. A nivel nacional lo que veo es un proceso político en el que se convocó al compromiso de la ciudadanía y que se movilizó una parte importante de la juventud , pero creo que una deuda de los últimos años es la crisis de la calidad educativa.
+    </div>
+
+  </div>
+</section>
+
+<footer></footer>
+
+<!-- app scripts -->
+<script src="js/app.js"></script>
+
+<script src="js/modules/core/app.core.js"></script>
+<script src="js/modules/core/services/lb-services.js"></script>
+<script src="js/modules/core/controllers/MainController.js"></script>
+<script src="js/modules/core/config/cfg.js"></script>
+<script src="js/modules/core/config/routes.js"></script>
+<script src="js/modules/core/directives/navbar.js"></script>
+
+<script src="js/modules/news/app.news.js"></script>
+<script src="js/modules/news/controllers/NoticiasController.js"></script>
+<script src="js/modules/news/directives/newsblock.js"></script>
+
+<!-- endappscripts -->
+
+
+</body>
+</html>

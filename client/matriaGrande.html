@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" ng-app="uai-news">
+<head>
+  <meta charset="UTF-8">
+  <title> {{ greet }} </title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- styles -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <!-- endstyles -->
+
+  <!-- scripts -->
+  <script src="vendor/jquery/dist/jquery.js"></script>
+
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="vendor/angular-resource/angular-resource.js"></script>
+  <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+  <!-- endscripts -->
+
+</head>
+<body ng-controller="MainController">
+
+<navbar></navbar>
+
+<section id="destacados">
+  <div class="container">
+    <h1 style="font-family: 'Chinese', Fallback, sans-serif;  font-size: 50px;">Matria Grande</h1>
+    <div class="row">
+      <a href="allende.html">
+        <div class="col-md-3 normal">
+          <div class="title-cat">"En Chile existe una..."</div>
+          <div class="description-cat">
+            Pablo Sepúlveda es hijo de Héctor Sepúlveda y Carmen Paz Alende, la segunda de las tres hijas de Hortensia Bussi y Salvador Allende, el ex presidente chileno. Reflexiona sobre las debilidades de la “vía chilena” al socialismo pero las identifica como enseñanzas para los procesos revolucionarios actuales.
+          </div>
+        </div>
+      </a>
+      <a href="seixas.html">
+        <div class="col-md-3 normal">
+          <div class="title-cat">O grande mito do rocanrol</div>
+          <div class="description-cat">
+            Este 28 de junio se cumplen 70 años del nacimiento del roquero más importante de la música brasilera. Vida, obra y legado del músico que se animó al rock en tiempos de samba y bossa nova.
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer></footer>
+
+<!-- app scripts -->
+<script src="js/app.js"></script>
+
+<script src="js/modules/core/app.core.js"></script>
+<script src="js/modules/core/services/lb-services.js"></script>
+<script src="js/modules/core/controllers/MainController.js"></script>
+<script src="js/modules/core/config/cfg.js"></script>
+<script src="js/modules/core/config/routes.js"></script>
+<script src="js/modules/core/directives/navbar.js"></script>
+
+<script src="js/modules/news/app.news.js"></script>
+<script src="js/modules/news/controllers/NoticiasController.js"></script>
+<script src="js/modules/news/directives/newsblock.js"></script>
+
+<!-- endappscripts -->
+
+
+</body>
+</html>

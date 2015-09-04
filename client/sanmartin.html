@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" ng-app="uai-news">
+<head>
+  <meta charset="UTF-8">
+  <title> {{ greet }} </title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- styles -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <!-- endstyles -->
+
+  <!-- scripts -->
+  <script src="vendor/jquery/dist/jquery.js"></script>
+
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="vendor/angular-resource/angular-resource.js"></script>
+  <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+  <!-- endscripts -->
+
+</head>
+<body ng-controller="MainController">
+
+<navbar></navbar>
+
+<section id="destacados">
+  <div class="container">
+    <div id="volanta" class="bold">
+      Batalla de Orán
+    </div>
+    <div id="titulo">
+      BAUTISMO DE FUEGO
+    </div>
+    <div id="imagen">
+      <img src="images/noticias/3/san%20martin.jpg" width="100%" alt=""/>
+    </div>
+    <div id="descripcion">
+      Con menos de 15 años, José de San Martín participó por primera vez de una batalla. Fue en África, defendiendo la fortaleza de Orán de los musulmanes.</div>
+    <div id="cuerpo">
+      La mar luce tranquila por la tarde, y no hay nada en la ondulación suave de sus olas que indique que en la orilla se desata un infierno. Más acá, sobre la costa, el olor a pólvora se mezcla con la brisa cargada de sal, y juntos envuelven a la ciudad de Orán en una nube que se parece a un velo. </br>
+      El rostro de la fortaleza está descompuesto en los cientos de rostros españoles que resisten el asedio bereber, disparando a ciegas por sobre las murallas, con más resignación que heroísmo. Es que no se ve nada ahí afuera. Lo único que permite afinar la puntería son los gritos de los musulmanes que aúllan y claman a Alá: es la sangre desos perros cristianos la que piden sus plegarias.</br>
+      El joven José de San Martín, desde las calles de la Orán sitiada, contempla todo con ojos de asombro, mientras va llevando un mensaje a uno de los batallones que defienden la ciudad. Sus trece años nunca han visto nada igual: ya son más de 30 días los que lleva bajo asedio la última plaza española en África.</br>
+      El imperio Otomano y un nuevo rey marroquí decidieron invadir Orán, enclavada en la costa sur del Mediterráneo, aprovechando los quilombos internos del Imperio Español. Era una batalla terrible, bajo su escenario latía soterrada la memoria de las guerras entre Roma y Cartago. </br>
+      Claro que el cadete José no piensa en nada de esto. Observa como observan los pibes de su edad: puramente, sin preconceptos ni anteojeras. Y lo que ve, lo que escucha, lo que huele, es La Guerra. Gritos, sangre, humo, estallidos, escombros, hambre, llantos.</br> Fascinado como ante los ojos de una serpiente, tiene que hacer un esfuerzo para no dejarse atrapar por el hechizo engañero que lo seduce a quedarse quieto, contemplando el caos. Y aunque ya lo intuía desde que de más chico elegía corretear por la selva en vez de quedarse pescando en el río, por primera vez comprende: él nació para actuar, para moverse en el caos y tratar de encauzarlo en un orden coherente.</br>
+      Su nariz aguileña resuella como la de un potrillo al empezar a trepar de dos en dos escalones la escalera de una torre, llevando las última novedades al capitán del cuerpo de granaderos del Rey. Tal vez sea un juego del destino: él mismo creará después ese regimiento en el Ejército Argentino. Pero para eso falta bastante...</br>
+      Un obús pasa silbando sobre su cabeza, yendo a estallar cinco escalones más arriba. Es un segundo, pero él ya decidió que éste es su juego: salta y en el aire entre el polvo grita. Cae al piso, esquiva las ruinas recién formadas, sigue corriendo.</br>
+    </div>
+
+  </div>
+</section>
+
+<footer></footer>
+
+<!-- app scripts -->
+<script src="js/app.js"></script>
+
+<script src="js/modules/core/app.core.js"></script>
+<script src="js/modules/core/services/lb-services.js"></script>
+<script src="js/modules/core/controllers/MainController.js"></script>
+<script src="js/modules/core/config/cfg.js"></script>
+<script src="js/modules/core/config/routes.js"></script>
+<script src="js/modules/core/directives/navbar.js"></script>
+
+<script src="js/modules/news/app.news.js"></script>
+<script src="js/modules/news/controllers/NoticiasController.js"></script>
+<script src="js/modules/news/directives/newsblock.js"></script>
+
+<!-- endappscripts -->
+
+
+</body>
+</html>

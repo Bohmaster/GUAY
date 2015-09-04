@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" ng-app="uai-news">
+<head>
+  <meta charset="UTF-8">
+  <title> {{ greet }} </title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- styles -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <!-- endstyles -->
+
+  <!-- scripts -->
+  <script src="vendor/jquery/dist/jquery.js"></script>
+
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="vendor/angular-resource/angular-resource.js"></script>
+  <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+  <!-- endscripts -->
+
+</head>
+<body ng-controller="MainController">
+
+<navbar></navbar>
+
+<section id="destacados">
+  <div class="container">
+    <div id="volanta" class="bold">
+      Jonathan Correa
+    </div>
+    <div id="titulo">
+      “Los jóvenes no estamos quemados políticamente."
+    </div>
+    <div id="descripcion">
+      Jonathan  tiene 24 años, fue el candidato que el partido del gobernador José Manuel de la Sota, Unión por Córdoba, presentó para competir por la intendencia de Sinsacate, un pueblo al norte de la provincia. En las elecciones de junio sacó el 30 por ciento de los votos, que si bien no le alcanzan para convertirse en intendente, sí le permiten asumir como concejal.</div>
+    <div id="cuerpo">
+      <b>-¿Cuál fue tu recorrido hasta llegar a la candidatura para intendente de Sinsacate? </b></br>
+      -Mi recorrido comienza en la secundaria: en sexto año fui vicepresidente del Centro de Estudiantes de mi colegio. En lo que respecta a la política partidaria, hace cuatro años empecé a militar en Unión por Córdoba, que es el PJ cordobés, apoyando al Gobernador José Manuel de la Sota y en particular la línea de su mujer, la compañera Adriana Nazario. Desde ahí comencé a crecer en esto, me fui ganando el espacio y el respeto de los dirigentes departamentales y provinciales, lo que también me permitió llegar a la función pública. </br></br>
+
+      <b>-¿El hecho de que seas tan joven la ves como una ventaja o una desventaja en tu relación con otros funcionarios?</b></br>
+      -La ventaja que tenemos los jóvenes es que no estamos "quemados políticamente", le aportamos a los partidos políticos el oxígeno que necesitan para renovarse. También hay que destacar la fortaleza que poseemos y en muchos casos la gran militancia que muchas veces nos permite estar en un contacto más fluido con la gente. Una desventaja puede ser que en algunos pueblos o ciudades aún tienen el prejuicio de que por ser jóvenes no podemos hacer ciertas cosas. Siempre dije que lo de la edad es circunstancial, todo depende de la madurez de la persona. </br></br>
+
+      <b>-¿Cuál es la importancia de la participación de la juventud en la política?</b></br>
+      -La participación es importantísima. Creo que en la última década se ha dado una activa participación de los jóvenes. Queremos gobernar, estamos diciendo que somos el presente y tenemos mucho potencial para dar, lástima que algunos dirigentes no lo entienden. Lo bueno es que muchos jóvenes estamos abiertos al diálogo y no nos fanatizamos con una ideología, partido o persona. Creo que de los consensos salen grandes ideas y proyectos.</br></br>
+
+      <b>-¿Cuáles creés que son las problemáticas más urgentes para los jóvenes de tu provincia? </b></br>
+      -A nivel provincial y nacional, un gran desafío para nuestros gobernantes es erradicar el consumo de drogas en los jóvenes. Lamentablemente es un flagelo y debemos como Estado y sociedad actuar cuanto antes. </br></br>
+
+      <b>-¿Cómo atenderías ese problema?</b></br>
+      -No considero que legalizando el consumo se pueda llegar a combatir la droga. Como estado y sociedad debemos afrontar esta gran problemática, y se enfrenta con programas a largo plazo, sacando a los jóvenes del consumo, conteniéndolos y ayudándolos en la canalización de sus vidas. Cada cual hace con su vida lo que quiere, pero las personas adictas muchas veces no logran controlar su vida y también hasta provocan alteraciones en las vidas de sus semejantes.
+
+    </div>
+  </div>
+</section>
+
+
+<footer></footer>
+<!-- app scripts -->
+<script src="js/app.js"></script>
+
+<script src="js/modules/core/app.core.js"></script>
+<script src="js/modules/core/services/lb-services.js"></script>
+<script src="js/modules/core/controllers/MainController.js"></script>
+<script src="js/modules/core/config/cfg.js"></script>
+<script src="js/modules/core/config/routes.js"></script>
+<script src="js/modules/core/directives/navbar.js"></script>
+
+<script src="js/modules/news/app.news.js"></script>
+<script src="js/modules/news/controllers/NoticiasController.js"></script>
+<script src="js/modules/news/directives/newsblock.js"></script>
+
+<!-- endappscripts -->
+
+
+</body>
+</html>

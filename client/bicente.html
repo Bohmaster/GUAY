@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" ng-app="uai-news">
+<head>
+  <meta charset="UTF-8">
+  <title> {{ greet }} </title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- styles -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <!-- endstyles -->
+
+  <!-- scripts -->
+  <script src="vendor/jquery/dist/jquery.js"></script>
+
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="vendor/angular-resource/angular-resource.js"></script>
+  <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+  <!-- endscripts -->
+
+</head>
+<body ng-controller="MainController">
+
+<navbar></navbar>
+
+<section id="destacados">
+  <div class="container">
+    <div id="volanta" class="bold">
+      Federico Frau Barros
+    </div>
+    <div id="titulo">
+      EL BICENTENARIO
+    </div>
+    <div id="imagen">
+      <img src="images/noticias/bicente/bicente%20grande.jpg" width="100%" alt=""/>
+    </div>
+    <div id="descripcion">
+      La noche del sábado 22 de mayo de 2010 habíamos terminado de ensayar unos temas con la banda en la que yo cantaba y nos fuimos para el obelisco. Sabíamos que esa noche la fiesta estaba ahí. La celebración por el bicentenario había empezado el día anterior y seguía hasta la madrugada del miércoles con la presencia de músicos y presidentes de todo el continente
+    </div>
+    <div id="cuerpo">
+      Fueron cinco días y noches de amor y alegría. Éramos cientos de miles de personas bailando y cantando en la 9 de julio. La guerra se detuvo por unos días o, mejor dicho, la detuvo el pueblo. ¿Se imaginan ustedes el banquete que se hubieran hecho los enemigos de siempre al otro día en las tapas de los diarios si hubiera habido que lamentar algún inconveniente, por más mínimo que fuera?
+      </br></br>
+      Dos millones de personas pasaron por la 9 de julio y la Plaza de Mayo durante esos cinco días. Y en medio de toda esa multitud, yo conocí al amor de mi vida. Fue un fl echazo. Al ritmo caribeño de la música de Totó La Momposina y su banda, nos pusimos a bailar. A partir de esa noche supe lo que es el amor, eso que creía saber de qué se trataba pero que realmente no tenía la más mínima idea.</br> Uno muchas veces cree estar seguro de algo hasta que aparece alguien que te cambia todo y te descubre un mundo. “Hace doscientos años que te busco”, fue mi chamuyo recontra berreta, el ridículo primer golpe de esa noche. Pero en el ring del amor no importan los detalles, hay que mantenerse todos los rounds en pie y si se puede llegar al fi nal bailando, mejor.
+      </br></br>
+      En el momento ni me imaginé que ese iba a terminar siendo un día tan importante. Y es que seguramente así sea la historia, la verdadera historia. Uno está tan compenetrado en la fuerza del instante que no puede estar pensando si eso que está pasando va a ser un hito, ni siquiera importa.</br> Tal vez eso mismo nos esté pasando ahora con el proceso que estamos viviendo y del que aquella fi esta fue un hermoso símbolo. Un nuevo tiempo histórico empezó siete años antes de esa noche, el 25 de mayo de 2003, cuando apareció uno de esos que te cambian todo, que te descubren un mundo, y que obviamente no se perdió esa fiesta popular.
+    </div>
+  </div>
+</section>
+
+<footer></footer>
+
+<!-- app scripts -->
+<script src="js/app.js"></script>
+
+<script src="js/modules/core/app.core.js"></script>
+<script src="js/modules/core/services/lb-services.js"></script>
+<script src="js/modules/core/controllers/MainController.js"></script>
+<script src="js/modules/core/config/cfg.js"></script>
+<script src="js/modules/core/config/routes.js"></script>
+<script src="js/modules/core/directives/navbar.js"></script>
+
+<script src="js/modules/news/app.news.js"></script>
+<script src="js/modules/news/controllers/NoticiasController.js"></script>
+<script src="js/modules/news/directives/newsblock.js"></script>
+
+<!-- endappscripts -->
+
+
+</body>
+</html>

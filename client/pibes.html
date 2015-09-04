@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" ng-app="uai-news">
+<head>
+  <meta charset="UTF-8">
+  <title> {{ greet }} </title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- styles -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <!-- endstyles -->
+
+  <!-- scripts -->
+  <script src="vendor/jquery/dist/jquery.js"></script>
+
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="vendor/angular-resource/angular-resource.js"></script>
+  <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+  <!-- endscripts -->
+
+</head>
+<body ng-controller="MainController">
+
+<navbar></navbar>
+
+<section id="destacados">
+  <div class="container">
+    <div id="volanta" class="bold">
+      Jóvenes en las listas
+    </div>
+    <div id="titulo">
+      EL PAÍS DE LOS PIBES SIN CALMA
+    </div>
+    <div id="imagen">
+      <img src="images/noticias/3/pibes.jpg" width="100%" alt=""/>
+    </div>
+    <div id="descripcion">
+      Hay elecciones, y hablamos con pibes y pibas de distintos partidos, para saber quiénes son y qué flashean los candidatos jóvenes, que no son el futuro, sino el hoy.</div>
+    <div id="cuerpo">
+      Como dice el tango, a veces hay cosas que nunca se alcanzan. Pero si algo demostró el proceso que se concibió en las jornadas heroicas del 2001, y que vio la luz dos años después de la mano de un limado venido desde el lejano sur, es que lo imposible sólo tarda un poco más. </br>
+      Una década y chirola después, entra definitivamente a la arena política la primer generación nacida en democracia. Si echamos una ojeada a las listas de todos los partidos políticos de la Argentina, vemos que la presencia de pibes y pibas con menos de 30 años es, si no abrumadora, digamos llamativa. Esto es un reflejo de la realidad: cada vez son más los jóvenes haciendo, discutiendo, militando, política. Para constatarlo basta recorrer cualquier barrio, escuela, sindicato o facultad.</br>
+      Está más que claro que la juventud no es un valor en sí mismo, ni un sujeto social estrictamente demarcado. Hay jóvenes y jóvenes. Oligarcas y laburantes. Revolucionarios y chantas. Pero lo que queremos destacar es que estos pibes candidatos a distintos cargos del Estado, son un signo (¡otro más!) del cambio de época que estamos viviendo.</br>
+      Martín Rodríguez, pensador porteño, desde hace un rato viene insistiendo con el tema: señala que en la actualidad política conviven tres generaciones. </br>
+      La más vieja, cuya figura paradigmática podría ser Cristina pero donde también encajan nefastos como Duhalde, es la generación que nació a la política hacia fines de la Resistencia, y tuvo su apogeo en el caos setentista. Es una generación muy ideologizada, que sufrió una sangría terrible, primero física en la dictadura, y después moral durante el neoliberalismo.  </br>
+      La intermedia, en la que podemos situar a Scioli y Macri, se inició en política con la vuelta a la democracia y creció durante la oscura noche de los 90s. Son gestores más que conductores, tenen un buen manejo mediático y del discurso, y prefieren evadir ciertos temas polémicos. </br>
+      La generación más reciente, en la que entrarían desde los pibes de La Cámpora hasta los jóvenes PRO. Empezó a actuar durante la crisis del neoliberalismo a fines del siglo XX, y dio un gran salto durante los doce años de kirchnerismo. Hijos de una modernidad en crisis, estos jóvenes conocieron en carne propia la mentira del fin de la historia, y comprobaron su falsedad en la experiencia concreta.</br>
+      Es que esta generación, que en estas elecciones sorprende por su presencia en las listas, ha asumido su rol histórico y hoy por hoy pisa fuerte. Como bien la definió la banda rosarina Austria, los pibes y pibas de hoy son “los padres del siglo”. Los desinformados y los desinformadores enterensé. Los chiquilines ya no miramos de afuera. </br></br>
+
+      <b>¡ACÁ TENÉS LOS PIBES!</b></br></br>
+
+      <a href="johana.html">Johana Gómez</a>, FIT de San Luis. <br/>
+      <a href="lucila.html">Lucila de Ponti</a>, FPV de Santa Fe. <br/>
+      <a href="martin.html">Martín Yeza</a>, PRO de Bs. As. <br/>
+      <a href="julian.html">Julián Ganón</a>, UCR de Bs. As. <br/>
+      <a href="jony.html">Jonathan Correa</a>, Unión de Córdoba. <br/>
+      <a href="manuel.html">Manuel Bertoldi</a>, Patria Grande de Bs. As. <br/>
+    </div>
+
+  </div>
+</section>
+
+
+<footer></footer>
+<!-- app scripts -->
+<script src="js/app.js"></script>
+
+<script src="js/modules/core/app.core.js"></script>
+<script src="js/modules/core/services/lb-services.js"></script>
+<script src="js/modules/core/controllers/MainController.js"></script>
+<script src="js/modules/core/config/cfg.js"></script>
+<script src="js/modules/core/config/routes.js"></script>
+<script src="js/modules/core/directives/navbar.js"></script>
+
+<script src="js/modules/news/app.news.js"></script>
+<script src="js/modules/news/controllers/NoticiasController.js"></script>
+<script src="js/modules/news/directives/newsblock.js"></script>
+
+<!-- endappscripts -->
+
+
+</body>
+</html>

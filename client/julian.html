@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en" ng-app="uai-news">
+<head>
+  <meta charset="UTF-8">
+  <title> {{ greet }} </title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- styles -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <!-- endstyles -->
+
+  <!-- scripts -->
+  <script src="vendor/jquery/dist/jquery.js"></script>
+
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="vendor/angular-resource/angular-resource.js"></script>
+  <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+  <!-- endscripts -->
+
+</head>
+<body ng-controller="MainController">
+
+<navbar></navbar>
+
+<section id="destacados">
+  <div class="container">
+    <div id="volanta" class="bold">
+      Julián Ganón
+    </div>
+    <div id="titulo">
+      “Los que queremos otra Argentina nos deben unir las coincidencias, y no el espanto.”
+    </div>
+    <div id="descripcion">
+      Julián Ganón tiene 25 años y es candidato a intendente de Magdalena, un pueblo de
+
+alrededor de 12 mil habitantes a 40 kilómetros de La Plata. 
+
+Quiso ir a elecciones junto a la boleta electoral de Ernesto Sanz, pero lo bajaron de la lista 
+
+del frente UCR-PRO por negarse a apoyar a Macri.</div>
+    <div id="cuerpo">
+      <b>--¿Qué te llevó a romper con la alianza UCR-PRO?</b></br>
+      -Entiendo que nuestro partido no tiene nada que ver con el PRO. A lo largo de la historia, la
+
+UCR ha mantenido una línea gruesa de pensamiento que es antinómica a las ideas de Macri. </br>
+
+Esa línea gruesa, lamentablemente, algunos dirigentes se encargaron de traicionarla y han 
+
+llevado al Partido a una decadencia ideológica manifiesta. El PRO es el paradigma del 
+
+Partido Político conservador en la Argentina, con una clara concepción liberal del mercado 
+
+y nosotros somos la socialdemocracia, defensores de un Estado presente para transformar el 
+
+país. No somos siquiera parecidos y a los que queremos otra Argentina nos deben unir las 
+
+coincidencias y no el espanto.</br></br>
+
+      <b>-¿Cuál creés que es el rol de la juventud dentro de un espacio político?</b></br>
+      -Entiendo que es hora que los jóvenes tomen la posta y dejen de obedecer sumisamente las
+
+decisiones que toman otros en pos de preservar sus espacios de poder.</br></br>
+
+      <b>-¿Qué diferencia ves entre la juventud radical y la juventud kirchnerista en cuánto a
+
+conciencia política, valores políticos y militancia?</b></br>
+      -Por un lado la juventud radical tiene los valores arraigados de más de cien años de historia 
+
+y la juventud kirchnerista es parte de algo más nuevo, ya que ni siquiera en el kirchnerismo 
+
+está claro el papel que se le da al peronismo en ese proyecto. Por otro lado, la juventud 
+
+radical nació desde las bases para luego ser parte de algunos gobiernos, mientras que la 
+
+juventud kirchnerista se constituyó pura y exclusivamente desde el ejercicio del poder. Sería 
+
+interesante ver qué rol cumplirían los jóvenes del kirchnerismo en el caso de no ser parte de 
+
+una gestión al frente del gobierno nacional. El poder se construye desde abajo hacia arriba, 
+
+al menos así lo entendemos nosotros.</br></br>
+
+      <b>-¿Qué cosas creés que se hicieron bien en materia de juventud en estos años y que cosas 
+
+creés que implican puntos muertos o retrocesos en el mismo sentido?</b></br>
+      -En estos años creo que la mejor novedad ha sido la vuelta de la participación de la juventud
+
+en la política.  Respecto a los retrocesos entiendo que los flagelos que sufre la sociedad, la 
+
+juventud los paga mucho más caros. La pobreza, la decadencia de los niveles educativos, la 
+
+proliferación de la droga atentan directamente contra los jóvenes y comprometen su futuro. </br>
+
+La única herramienta para cambiar esa realidad es la política, por eso destaco el incremento 
+
+de la participación, lo cual nos marca un panorama alentador para el mediano plazo.</br></br>
+
+      <b>-Haciendo un diagnóstico de la juventud de tu ciudad, ¿cuáles creés que son las problemáticas 
+
+más urgentes?</b></br>
+      -Las problemáticas de mi ciudad no se diferencian mucho de los problemas de la provincia. 
+
+La generación de fuentes de trabajo genuino es una realidad que preocupa en nuestro distrito 
+
+y eso lo pagan caro los jóvenes que terminan de estudiar y no tienen la posibilidad de 
+
+acceder a un empleo digno. Y la problemática de la vivienda también es otro de los grandes 
+
+inconvenientes que padece el sector más joven de la comunidad. En definitiva, educación, 
+
+trabajo y vivienda son tres aspectos que afectan a los jóvenes y van a ser tres áreas 
+
+prioritarias para nuestra gestión.</br></br>
+
+  <b>-¿Qué políticas aplicarías para atender esos problemas?</b></br>
+  -En cuanto a la vivienda, proponemos un plan con recursos propios para construir al menos 
+
+25 casas por año y también un plan de refacción de viviendas. Y respecto al problema del 
+
+empleo, tenemos un proyecto de capacitación y de convenios con empresas, un plan de 
+
+pequeños emprendedores, con créditos y capacitación para su desarrollo, y también la 
+
+construcción de un parque industrial.</br></br>
+
+    </div>
+  </div>
+</section>
+
+
+<footer></footer>
+<!-- app scripts -->
+<script src="js/app.js"></script>
+
+<script src="js/modules/core/app.core.js"></script>
+<script src="js/modules/core/services/lb-services.js"></script>
+<script src="js/modules/core/controllers/MainController.js"></script>
+<script src="js/modules/core/config/cfg.js"></script>
+<script src="js/modules/core/config/routes.js"></script>
+<script src="js/modules/core/directives/navbar.js"></script>
+
+<script src="js/modules/news/app.news.js"></script>
+<script src="js/modules/news/controllers/NoticiasController.js"></script>
+<script src="js/modules/news/directives/newsblock.js"></script>
+
+<!-- endappscripts -->
+
+
+</body>
+</html>

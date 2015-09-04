@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" ng-app="uai-news">
+<head>
+  <meta charset="UTF-8">
+  <title> {{ greet }} </title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- styles -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <!-- endstyles -->
+
+  <!-- scripts -->
+  <script src="vendor/jquery/dist/jquery.js"></script>
+
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="vendor/angular-resource/angular-resource.js"></script>
+  <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+  <!-- endscripts -->
+
+</head>
+<body ng-controller="MainController">
+
+<navbar></navbar>
+
+<section id="destacados">
+  <div class="container">
+    <div id="volanta" class="bold">
+      Manuel Bertoldi
+    </div>
+    <div id="titulo">
+      “La juventud debe organizarse alrededor de su capacidad creativa”
+    </div>
+    <div id="descripcion">
+      Manuel tiene 35 años y es  el candidato a gobernador de Buenos Aires del movimiento Patria Grande. Participó de la fundación del Frente Darío Santillán, del cual en 2014 se desprendió Patria Grande , que debutará en estas elecciones con 16 candidatos a intendente y presencia en los 135 distritos de la Provincia</div>
+    <div id="cuerpo">
+      <b>-¿Por quiénes está integrado Patria Grande?	</b></br>
+      -Patria Grande es un movimiento popular que mayoritariamente está integrada por jóvenes que se han sumado a la militancia desde el 2001 hacia acá, aunque también hay compañeros y compañeras que provienen de diferentes historias de militancia, ya que asumimos que es necesario construir un proceso de mayorías sociales anclado en las diferentes identidades que nuestro pueblo ha construido a lo largo de su historia.  </br>
+      En la boleta de Patria Grande contamos con referentes importantes de la lucha social, como por ejemplo nuestro candidato a primer concejal de Lanús, Diego o la primer concejal de San Martín, Claudia, referentes cartoneros y trabajadores de la economía popular. </br></br>
+
+      <b>-¿Cuál es el objetivo de Patria Grande en estas elecciones?</b></br>
+      -En este escenario nuestro objetivo es dar un paso más en la consolidación de una alternativa por fuera de las estructuras tradicionales, que mirando los procesos en Latinoamérica, avance en la construcción de horizontes de soberanía, justicia social y protagonismo popular. </br></br>
+
+      <b>-¿Qué medida urgente tomarías como gobernador?</b></br>
+      -Hay que tomar medidas en relación al acceso a la tierra y la vivienda. Un plan provincial de construcción de viviendas es una demanda de miles de familias en toda la provincia. En cuanto a la seguridad es necesario institucionalizar urgente un plan de formación integral de mediano plazo anclado en la prevención y que apunte a desestructurar los grandes delitos como el narcotráfico y las redes de tratas. La política de seguridad no puede ser asumida como política de marketing electoral.</br>
+      Por último crearía el Ministerio de la Economía Popular para construir políticas públicas para un sector de la clase trabajadora. Hay que generar las condiciones para fortalecer desde el Estado el desarrollo de las economías regionales.</br></br>
+
+      <b>-¿Qué diferencia ves entre los jóvenes kirchneristas, los jóvenes del Pts o del Po y los de Patria Grande en cuánto a conciencia política, valores políticos y militancia?</b></br>
+      -Patria Grande valora la participación política de la juventud independientemente del lugar donde se desarrolle, pero es una realidad que no todos los espacios políticos representan un mismo proyecto para los jóvenes. El kirchnerismo, a pesar de ser un espacio que nuclea a miles de jóvenes en todo el país, tiene como límite que se estructura como movimiento juvenil alrededor de una estructura de gobierno, entonces carece de independencia política y su capacidad de acción esta siempre acotada a lo posible. Por otro lado, las juventudes del PTS o el PO, a pesar de organizarse alrededor de una propuesta que es revolucionaria, sostienen valores que nosotros cuestionamos por su alto nivel de mezquindad política y sectarismo. Los jóvenes de Patria Grande no creemos que exista una única izquierda ni una única forma de construirla, por eso creemos que la juventud debe organizarse alrededor de su capacidad creativa y protagónica de la política, sin ataduras y con el único objetivo de transformarlo todo.
+
+    </div>
+
+  </div>
+</section>
+
+<footer></footer>
+
+<!-- app scripts -->
+<script src="js/app.js"></script>
+
+<script src="js/modules/core/app.core.js"></script>
+<script src="js/modules/core/services/lb-services.js"></script>
+<script src="js/modules/core/controllers/MainController.js"></script>
+<script src="js/modules/core/config/cfg.js"></script>
+<script src="js/modules/core/config/routes.js"></script>
+<script src="js/modules/core/directives/navbar.js"></script>
+
+<script src="js/modules/news/app.news.js"></script>
+<script src="js/modules/news/controllers/NoticiasController.js"></script>
+<script src="js/modules/news/directives/newsblock.js"></script>
+
+<!-- endappscripts -->
+
+
+</body>
+</html>

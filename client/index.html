@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en" ng-app="uai-news">
+<head>
+  <meta charset="UTF-8">
+  <title> GUAY - Suplemento juvenil - </title>
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <!-- endstyles -->
+
+  <!-- scripts -->
+  <script src="vendor/jquery/dist/jquery.js"></script>
+
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="vendor/angular-resource/angular-resource.js"></script>
+  <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+  <!-- endscripts -->
+
+</head>
+<body ng-controller="MainController">
+
+  <navbar></navbar>
+
+  <section id="destacados">
+    <news-block></news-block>
+  </section>
+
+  <section class="pie">
+
+  </section>
+
+  <section class="pie-2">
+    <div class="container-fluid">
+      <h1 class="quote-white">
+        Guay, bautizaron a los ríos los guaraníes. <br/><br/>
+        Guay, advierten en el campo argentino, como diciendo ¡guarda con esto!
+      </h1>
+    </div>
+  </section>
+
+  <section id="destacados-black">
+    <div class="container">
+      <div class="row bord" id="main">
+        <a href="sanmartin.html">
+          <div class="col-md-4 normal2">
+            <div class="title">BAUTISMO DE FUEGO.</div>
+            <div class="description">
+              Con menos de 15 años, José de San Martín participó por primera vez de una batalla. Fue en África,
+
+              defendiendo la....
+            </div>
+            <img src="images/noticias/3/san%20martin.jpg" width="100%" height="390"  alt=""/>
+          </div>
+        </a>
+        <a href="ammar.html">
+          <div class="col-md-4 normal2">
+            <div class="title">Vivir, luchar, AMMAR</div>
+            <div class="description">
+              “Somos triplemente discriminadas. Por mujeres, por pobres y por putas”, suelen decir las integrantes de...
+            </div>
+            <img src="images/noticias/3/ammar.jpg" width="100%" height="300"  alt=""/>
+          </div>
+        </a>
+        <a href="martin.html">
+            <div class="col-md-4 normal2">
+              <div class="title">“No pienso sobre el rol de la juventud.”</div>
+              <div class="description">
+                Martín tiene 29 años. Es de Pinamar, y precandidato a intendente de esa ciudad por el PRO.</div>
+              <img src="images/noticias/3/martin.jpg" width="100%"  alt=""/>
+            </div>
+        </a>
+        <a href="caracas.html">
+          <div class="col-md-4 normal2">
+            <div class="title">B° 23 de Enero: Sierra Maestra</div>
+            <div class="description">
+              En el corazón de Caracas, Venezuela, a cocoyo de los cerros, está el barrio 23 de Enero. Entre sus
+
+              bloques de edificios...
+            </div>
+            <img src="images/noticias/3/caracas.jpg" width="100%" height="300" alt=""/>
+          </div>
+        </a>
+        <a href="lucila.html">
+      <div class="col-md-4 normal2">
+        <div class="title">“Nuestro rol es consolidar..."</div>
+        <div class="description">
+          Lucila es politóloga, tiene 29 años, y desde hace 11 milita en el Movimiento Evita...
+        </div>
+        <img src="images/noticias/3/lucila.jpg" width="100%"  alt=""/>
+      </div>
+    </a>
+        <a href="johana.html">
+      <div class="col-md-4 normal2">
+        <div class="title">“La juventud es la más damnificada.”</div>
+        <div class="description">
+          Johana tiene 26 años, vive en la ciudad de San Luis. Es maestra rural y precandidata a diputada
+
+          nacional por San Luis por el PTS...
+        </div>
+        <img src="images/noticias/3/johana.jpg" width="100%" height="300"  alt=""/>
+      </div>
+    </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pie-3"></section>
+
+  <section class="pie-2" style="margin-bottom: -40px;">
+    <div class="container-fluid">
+      <h1 class="quote">
+        Guay, festejan en Centroamérica cuando algo les parece piola. <br/><br/>
+        Guay, por qué, se preguntan los gusanos en Miami todo el tiempo, <br/><br/> no pudiendo comprender.
+      </h1>
+    </div>
+  </section>
+
+  <footer></footer>
+
+
+
+  <!-- app scripts -->
+  <script src="js/app.js"></script>
+
+  <script src="js/modules/core/app.core.js"></script>
+  <script src="js/modules/core/services/lb-services.js"></script>
+  <script src="js/modules/core/controllers/MainController.js"></script>
+  <script src="js/modules/core/config/cfg.js"></script>
+  <script src="js/modules/core/config/routes.js"></script>
+  <script src="js/modules/core/directives/navbar.js"></script>
+
+  <script src="js/modules/news/app.news.js"></script>
+  <script src="js/modules/news/controllers/NoticiasController.js"></script>
+  <script src="js/modules/news/directives/newsblock.js"></script>
+
+  <!-- endappscripts -->
+
+
+</body>
+</html>
+

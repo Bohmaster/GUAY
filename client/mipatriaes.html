@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" ng-app="uai-news">
+<head>
+  <meta charset="UTF-8">
+  <title> {{ greet }} </title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- styles -->
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <!-- endstyles -->
+
+  <!-- scripts -->
+  <script src="vendor/jquery/dist/jquery.js"></script>
+
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="vendor/angular-resource/angular-resource.js"></script>
+  <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+  <!-- endscripts -->
+
+</head>
+<body ng-controller="MainController">
+
+<navbar></navbar>
+
+<section id="destacados">
+  <div class="container">
+    <h1 style="font-family: 'Chinese', Fallback, sans-serif;  font-size: 50px;">Mi patria es</h1>
+    <div class="row">
+      <a href="caracas.html">
+        <div class="col-md-3 normal">
+          <div class="title-cat">B° 23 de Enero: Sierra Maestra</div>
+          <div class="description-cat">
+            En el corazón de Caracas, Venezuela, a cocoyo de los cerros, está el barrio 23 de Enero. Entre sus bloques de edificios descansan los restos del Comandante Hugo Chávez y las organizaciones sociales construyen comunidad. Salvador Salas, miembro del Colectivo Alexis Vive...
+          </div>
+        </div>
+      </a>
+      <a href="inter.html">
+        <div class="col-md-3 normal">
+          <div class="title-cat">La Comunidad</div>
+          <div class="description-cat">
+            Entre las laderas de las montañas patagónicas, rodeado de bosques que invitan a perderse en su espesura, se está erigiendo el Barrio Intercultural, insólito proyecto soñado y puesto en marcha por los Vecinos Sin Techo de San Martín de los Andes.
+          </div>
+        </div>
+      </a>
+      <a href="alberdi.html">
+        <div class="col-md-3 normal">
+          <div class="title-cat">CIUDAD & PAMPA</div>
+          <div class="description-cat">
+            Por calle Baigorria, tras las murallas exteriores de Circunvalación, se puede llegar a una región que los cartógrafos insisten en llamar Nuevo Alberdi, a pesar de que ese nombre designa por lo menos tres barrios distintos: Municipal, Nuevo Alberdi Oeste, Zona Cero, entre muchos más...
+          </div>
+        </div>
+      </a>
+
+
+    </div>
+  </div>
+</section>
+
+<footer></footer>
+
+<!-- app scripts -->
+<script src="js/app.js"></script>
+
+<script src="js/modules/core/app.core.js"></script>
+<script src="js/modules/core/services/lb-services.js"></script>
+<script src="js/modules/core/controllers/MainController.js"></script>
+<script src="js/modules/core/config/cfg.js"></script>
+<script src="js/modules/core/config/routes.js"></script>
+<script src="js/modules/core/directives/navbar.js"></script>
+
+<script src="js/modules/news/app.news.js"></script>
+<script src="js/modules/news/controllers/NoticiasController.js"></script>
+<script src="js/modules/news/directives/newsblock.js"></script>
+
+<!-- endappscripts -->
+
+
+</body>
+</html>
